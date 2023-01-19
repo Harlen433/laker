@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 5px;
+  font-family: Alegreya Sans, sans-serif;
+
+  background-repeat: no-repeat;
+  background-size: 100px 200px;
+  background: url("1652425292_5-gamerwall-pro-p-naik-minimalizm-oboi-krasivo-6.jpg");
+}
+
+.sidenav {
+  position: relative;
+  display:flex;
+  flex-direction: row;
+  height: 150px;
+  width: 100%;  
+  left:20px;
+  margin-top: 20px;
+  grid-gap:100px;
+  z-index: 1;
+ 
+}
+
+
+.sidenav a {
+  margin-left: 20px;
+  top :20px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #000000;
+}
+
+.sidenav a:hover {
+  color: #8199e9;
+}
+
+
+
+
+
+.corporation
+{
+  position: absolute;
+  left:5px;
+}
+.hello
+{
+  position:absolute;
+  color: #000000;
+  font-size: 50px;
+  top :200px;
+  width:auto;
+  margin-left: 80px;
+  line-height: 30px;
+  height: auto;
+}
+
+.lake
+{
+  
+  position:absolute;
+  color: #000000;
+  font-size: 30px;
+  top :325px;
+
+  width:300px;
+  margin-left: 80px;
+  line-height: 25px;
+  height: auto;
+}
+
+
+.button{
+  margin-top:340px;
+  margin-left:200px;
+}
+
+a {
+  position: relative;
+  padding: 20px 50px;
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+a span {
+  position: relative;
+  color: #fff;
+  font-size: 25px;
+  font-family: Arial;
+  line-height:20px ;
+  z-index: 1;
+}
+
+a .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #000000;
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5);
+  transition: .5s;
+}
+
+a .liquid::after,
+a .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+a .liquid::before {
+  
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+a .liquid::after {
+  
+  border-radius: 40%;
+  background: rgba(255, 255, 255, 0.77);
+  animation: animate 10s linear infinite;
+}
+
+a:hover .liquid{
+  top: -120px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
